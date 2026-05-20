@@ -1,0 +1,672 @@
+/* =========================
+   GLOBAL
+========================= */
+
+html{
+    scroll-behavior:smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f8fafc;
+    color: #111827;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    background: #F4F0E6;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* spacing section */
+
+.section-space {
+
+    padding-top: 120px;
+
+    padding-bottom: 120px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-navbar {
+
+    background: #F4F0E6;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    min-height: 70px;
+
+    border-bottom:
+        1px solid rgba(0, 0, 0, 0.08);
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.logo-text {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #F75C2F !important;
+
+    text-decoration: none;
+}
+
+.navbar-nav {
+
+    gap: 10px;
+}
+
+.nav-link {
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #149C93 !important;
+}
+
+/* =========================
+   END NAVBAR
+========================= */
+
+/* =========================
+   FOOTER
+========================= */
+
+.custom-footer{
+
+    background:#F4F0E6;
+
+    padding-top:55px;
+
+    padding-bottom:45px;
+
+    margin-top:70px;
+}
+
+/* Wrapper */
+
+.footer-wrapper{
+
+    padding-left:90px;
+
+    padding-right:90px;
+}
+
+/* Footer Top */
+
+.footer-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+}
+
+/* Footer Menu */
+
+.footer-menu{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.footer-menu a{
+
+    text-decoration:none;
+
+    color:#000;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:0.3s ease;
+}
+
+.footer-menu a:hover{
+
+    color:#F75C2F;
+}
+
+/* Social Media */
+
+.footer-social{
+
+    display:flex;
+
+    gap:16px;
+}
+
+.footer-social a{
+
+    width:42px;
+
+    height:42px;
+
+    background:#000;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    text-decoration:none;
+
+    transition:0.3s ease;
+}
+
+.footer-social a:hover{
+
+    background:#F75C2F;
+
+    transform:translateY(-3px);
+}
+
+/* Line
+
+.footer-line{
+
+    margin-top:35px;
+
+    margin-bottom:40px;
+
+    opacity:0.2;
+} */
+
+/* Sponsor */
+
+.footer-sponsor{
+
+    text-align:center;
+}
+
+.footer-sponsor p{
+
+    font-size:16px;
+
+    font-weight:700;
+
+    margin-top:100px;
+
+    margin-bottom:10px;
+}
+
+.footer-sponsor h1{
+
+    font-size:42px;
+
+    line-height:1.1;
+
+    font-weight:700;
+
+    color:#0D1633;
+}
+
+/* Copyright */
+
+.footer-copy{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#0D1633;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .footer-wrapper{
+
+        padding-left:25px;
+
+        padding-right:25px;
+    }
+
+    .footer-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    .footer-menu{
+
+        flex-direction:column;
+
+        gap:14px;
+    }
+
+    .footer-social{
+
+        margin-top:10px;
+    }
+
+    .footer-sponsor h1{
+
+        font-size:34px;
+    }
+
+}
+
+/* =========================
+    END FOOTER
+========================= */
+
+/* ===================================
+   TICKET SECTION
+=================================== */
+
+.ticket-section{
+
+    padding:
+        100px 0;
+
+    background:#F4F0E6;
+}
+
+/* Title */
+
+.ticket-title{
+
+    text-align:center;
+
+    font-size:64px;
+
+    font-weight:700;
+
+    color:#F75C2F;
+
+    margin-bottom:70px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+/* Container */
+
+.ticket-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:stretch;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+}
+
+/* ===================================
+   CARD
+=================================== */
+
+.ticket-card{
+
+    width:340px;
+
+    border-radius:40px;
+
+    padding:40px 35px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:0.35s ease;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.08);
+
+    border:
+        3px solid rgba(255,255,255,0.3);
+}
+
+/* Hover */
+
+.ticket-card:hover{
+
+    transform:
+        translateY(-12px)
+        rotate(-1deg);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ===================================
+   EARLY BIRD
+=================================== */
+
+.early-card{
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFD65A,
+            #FF9B17
+        );
+}
+
+/* ===================================
+   PRESALE
+=================================== */
+
+.presale-card{
+
+    background:
+        linear-gradient(
+            135deg,
+            #8BEA8B,
+            #36C486
+        );
+}
+
+/* ===================================
+   REGULAR
+=================================== */
+
+.regular-card{
+
+    background:
+        linear-gradient(
+            135deg,
+            #16B7A7,
+            #0C8C81
+        );
+}
+
+/* ===================================
+   BADGE
+=================================== */
+
+.ticket-badge{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    background:#fff;
+
+    color:#111;
+
+    padding:
+        10px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* SOLD OUT */
+
+.soldout{
+
+    background:#FF5B5B;
+
+    color:#fff;
+}
+
+/* AVAILABLE */
+
+.available{
+
+    background:#fff;
+
+    color:#111;
+}
+
+/* COMING SOON */
+
+.comingsoon{
+
+    background:#222;
+
+    color:#fff;
+}
+
+/* ===================================
+   ICON
+=================================== */
+
+.ticket-icon{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+}
+
+/* ===================================
+   TICKET NAME
+=================================== */
+
+.ticket-name{
+
+    font-size:48px;
+
+    line-height:1;
+
+    font-weight:700;
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+    text-transform:uppercase;
+
+    text-shadow:
+        3px 3px 0 rgba(0,0,0,0.12);
+}
+
+/* ===================================
+   PRICE
+=================================== */
+
+.ticket-price{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    margin-bottom:30px;
+}
+
+/* ===================================
+   BENEFIT LIST
+=================================== */
+
+.ticket-benefit{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 35px 0;
+}
+
+.ticket-benefit li{
+
+    font-size:18px;
+
+    color:#fff;
+
+    margin-bottom:14px;
+
+    font-weight:500;
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.ticket-btn{
+
+    display:inline-block;
+
+    padding:
+        16px 30px;
+
+    border-radius:60px;
+
+    background:#fff;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    transition:0.3s ease;
+}
+
+.ticket-btn:hover{
+
+    background:#111;
+
+    color:#fff;
+
+    transform:scale(1.05);
+}
+
+/* ===================================
+   DECORATION
+=================================== */
+
+.ticket-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:
+        rgba(255,255,255,0.12);
+
+    border-radius:50%;
+
+    top:-60px;
+
+    right:-60px;
+}
+
+.ticket-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border-radius:50%;
+
+    bottom:-40px;
+
+    left:-40px;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:992px){
+
+    .ticket-wrapper{
+
+        gap:25px;
+    }
+
+    .ticket-card{
+
+        width:90%;
+    }
+}
+
+@media(max-width:768px){
+
+    .ticket-title{
+
+        font-size:42px;
+    }
+
+    .ticket-name{
+
+        font-size:36px;
+    }
+
+    .ticket-price{
+
+        font-size:32px;
+    }
+
+    .ticket-card{
+
+        padding:35px 28px;
+    }
+}
