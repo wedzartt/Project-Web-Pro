@@ -1,0 +1,68 @@
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-navbar {
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+
+    background:#F4F0E6;
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    padding-top:18px;
+    padding-bottom:18px;
+
+    border-bottom:
+        1px solid rgba(0,0,0,0.08);
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,0.05);
+
+    transition:0.3s ease;
+}
+
+.custom-navbar.scrolled{
+    
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.08);
+}
+
+.logo-text {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #F75C2F !important;
+
+    text-decoration: none;
+}
+
+.navbar-nav {
+
+    gap: 10px;
+}
+
+.nav-link {
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #149C93 !important;
+}
+
+/* =========================
+   END NAVBAR
+========================= */

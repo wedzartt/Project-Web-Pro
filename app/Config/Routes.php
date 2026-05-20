@@ -7,10 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->get('/ticket', 'Ticket::index');
+$routes->get('/ticket', 'Tickets::ticket');
 
-$routes->get('/lineup', 'Lineup::index');
 
-$routes->get('/login', 'Auth::login');
-
-$routes->get('/register', 'Auth::register');
+// jadi dibagian Tickets nama file di controllers
+// terus ::ticket itu di public functuon "ticket()"

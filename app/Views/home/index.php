@@ -2,204 +2,209 @@
 
 <?= $this->section('content'); ?>
 
-<!-- =========================
-     TICKET SECTION
-========================= -->
 
-<section
-    class="ticket-section"
-    id="ticket">
+<!-- HERO SECTION -->
+<section class="hero-festival" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-badge">
+            GENERASI MELODY FESTIVAL MUSIK 2026
+        </div>
+
+        <h1 class="hero-title">
+            GENERASI
+            <span>MELODY</span>
+        </h1>
+
+        <p class="hero-description">
+            Festival musik penuh warna,
+            pantai, senja, dan lineup terbaik
+            tahun ini.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#ticket" class="btn-ticket">
+                BUY TICKET
+            </a>
+
+            <a href="#lineup" class="btn-lineup">
+                SEE LINEUP
+            </a>
+
+        </div>
+
+        <!-- Floating Decorations -->
+
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="sun"></div>
+
+    </div>
+
+</section>
+
+
+<!-- Running Text -->
+<section class="running-text">
+
+    <div class="marquee">
+
+        <div class="marquee-content">
+
+            <span>GENERASI MELODY</span>
+            <span>•</span>
+
+            <span>MUSIC FESTIVAL</span>
+            <span>•</span>
+
+            <span>SUMMER VIBES</span>
+            <span>•</span>
+
+            <span>LIVE PERFORMANCE</span>
+            <span>•</span>
+
+            <span>INDONESIA FESTIVAL</span>
+            <span>•</span>
+
+            <span>GENERASI MELODY</span>
+            <span>•</span>
+
+            <span>MUSIC FESTIVAL</span>
+            <span>•</span>
+
+            <span>SUMMER VIBES</span>
+            <span>•</span>
+
+            <span>LIVE PERFORMANCE</span>
+            <span>•</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- /* =========================
+ABOUT SECION FESTIVAL 1 (BODY 1)
+========================= */ -->
+
+<section class="about-festival" id="about">
 
     <div class="container">
 
-        <!-- Title -->
+        <div class="festival-box">
 
-        <h1 class="ticket-title">
-            Festival Tickets
-        </h1>
+            <h2 class="festival-title">
+                GENERASI MELODY
+            </h2>
 
-        <!-- Wrapper -->
+            <p class="festival-text">
 
-        <div class="ticket-wrapper">
+                Generasi Melody merupakan festival musik
+                multi-genre yang menghadirkan nuansa
+                nostalgia, pop culture, dan semangat
+                generasi baru dalam satu panggung.
 
-            <!-- =========================
-                 EARLY BIRD
-            ========================= -->
+                Nikmati pengalaman festival penuh warna
+                bersama musisi favorit Indonesia dan suasana meriah
+                sepanjang hari.
 
-            <div class="ticket-card early-card">
+            </p>
 
-                <!-- Badge -->
+        </div>
 
-                <span class="ticket-badge soldout">
-                    SOLD OUT
-                </span>
+    </div>
 
-                <!-- Icon -->
+</section>
 
-                <div class="ticket-icon">
-                    ⭐
-                </div>
+<!-- /* =========================
+    ABOUT SECION FESTIVAL 1 (BODY 1)
+========================= */ -->
 
-                <!-- Ticket Name -->
+<!-- /* =========================
+    SHAPE DRIVER
+========================= */ -->
 
-                <h2 class="ticket-name">
-                    Early Bird
-                </h2>
+<div class="wave-divider">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path
+            d="M0,64L80,58.7C160,53,320,43,480,53.3C640,64,800,96,960,101.3C1120,107,1280,85,1360,74.7L1440,64L1440,160L1360,160C1280,160,1120,160,960,160C800,160,640,160,480,160C320,160,160,160,80,160L0,160Z">
+        </path>
+    </svg>
+</div>
 
-                <!-- Price -->
+<!-- /* =========================
+    SHAPE DRIVER
+========================= */
 
-                <div class="ticket-price">
-                    Rp 350K
-                </div>
+/* =========================
+    LINEUP ARTIST (BODY 2)
+========================= */ -->
 
-                <!-- Benefit -->
+<section class="lineup-section" id="lineup">
 
-                <ul class="ticket-benefit">
+    <div class="container">
 
-                    <li>
-                        ✓ 3 Day Pass
-                    </li>
+        <h2 class="section-heading">
+            LINEUP ARTIST
+        </h2>
 
-                    <li>
-                        ✓ Festival Merchandise
-                    </li>
+        <div class="artist-wrapper">
 
-                    <li>
-                        ✓ Priority Entrance
-                    </li>
-
-                </ul>
-
-                <!-- Button -->
-
-                <a
-                    href="#"
-                    class="ticket-btn">
-
-                    Sold Out
-
-                </a>
-
+            <div class="artist-card">
+                Hindia
             </div>
 
-            <!-- =========================
-                 PRESALE
-            ========================= -->
-
-            <div class="ticket-card presale-card">
-
-                <!-- Badge -->
-
-                <span class="ticket-badge available">
-                    AVAILABLE
-                </span>
-
-                <!-- Icon -->
-
-                <div class="ticket-icon">
-                    🍒
-                </div>
-
-                <!-- Ticket Name -->
-
-                <h2 class="ticket-name">
-                    Presale
-                </h2>
-
-                <!-- Price -->
-
-                <div class="ticket-price">
-                    Rp 550K
-                </div>
-
-                <!-- Benefit -->
-
-                <ul class="ticket-benefit">
-
-                    <li>
-                        ✓ 3 Day Pass
-                    </li>
-
-                    <li>
-                        ✓ Fast Track Access
-                    </li>
-
-                    <li>
-                        ✓ Festival Goodie Bag
-                    </li>
-
-                </ul>
-
-                <!-- Button -->
-
-                <a
-                    href="#"
-                    class="ticket-btn">
-
-                    Buy Ticket
-
-                </a>
-
+            <div class="artist-card">
+                Reality Club
             </div>
 
-            <!-- =========================
-                 REGULAR
-            ========================= -->
+            <div class="artist-card">
+                The Adams
+            </div>
 
-            <div class="ticket-card regular-card">
+            <div class="artist-card">
+                Feast
+            </div>
 
-                <!-- Badge -->
+            <div class="artist-card">
+                Nadin Amizah
+            </div>
 
-                <span class="ticket-badge comingsoon">
-                    COMING SOON
-                </span>
+            <div class="artist-card">
+                Bernadya
+            </div>
 
-                <!-- Icon -->
+            <div class="artist-card">
+                The Panturas
+            </div>
 
-                <div class="ticket-icon">
-                    🎵
-                </div>
+            <div class="artist-card">
+                Sheila on 7
+            </div>
 
-                <!-- Ticket Name -->
+            <div class="artist-card">
+                Iwan Fals
+            </div>
 
-                <h2 class="ticket-name">
-                    Regular Pass
-                </h2>
+            <div class="artist-card">
+                Dhyo Haw
+            </div>
 
-                <!-- Price -->
+            <div class="artist-card">
+                Ndx-aka
+            </div>
 
-                <div class="ticket-price">
-                    Rp 750K
-                </div>
+            <div class="artist-card">
+                Barasuara
+            </div>
 
-                <!-- Benefit -->
-
-                <ul class="ticket-benefit">
-
-                    <li>
-                        ✓ Full Festival Access
-                    </li>
-
-                    <li>
-                        ✓ Main Stage Access
-                    </li>
-
-                    <li>
-                        ✓ Food & Art Area
-                    </li>
-
-                </ul>
-
-                <!-- Button -->
-
-                <a
-                    href="#"
-                    class="ticket-btn">
-
-                    Coming Soon
-
-                </a>
-
+            <div class="artist-card">
+                Fourtwenty
             </div>
 
         </div>
@@ -207,5 +212,9 @@
     </div>
 
 </section>
+
+<!-- /* =========================
+LINEUP SELESAI (BODY 2)
+========================= */ -->
 
 <?= $this->endSection(); ?>

@@ -1,0 +1,120 @@
+
+/* =========================
+   HERO FESTIVAL
+========================= */
+
+.hero-festival{
+
+    position:relative;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #77B7FF 0%,
+            #8CC6FF 40%,
+            #F4F0E6 100%
+        );
+
+    padding-top:180px;
+}
+
+/* Container */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+}
+
+/* Badge */
+
+.hero-badge{
+
+    display:inline-block;
+
+    background:#fff;
+
+    color:#F75C2F;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    margin-bottom:28px;
+
+    border:3px solid #222;
+
+    box-shadow:4px 4px 0 #222;
+}
+
+/* Title */
+
+.hero-title{
+
+    font-size:90px;
+
+    font-weight:800;
+
+    line-height:1;
+
+    color:#FFF7E8;
+
+    text-transform:uppercase;
+
+    -webkit-text-stroke:5px #222;
+
+    text-shadow:
+        6px 6px 0 #F75C2F;
+
+    margin-bottom:24px;
+}
+
+.hero-title span{
+
+    display:block;
+
+    color:#FFE16A;
+}
+
+/* Description */
+
+.hero-description{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    font-weight:500;
+
+    color:#222;
+
+    margin-bottom:40px;
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}

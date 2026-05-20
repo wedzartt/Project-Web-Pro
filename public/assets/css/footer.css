@@ -1,0 +1,207 @@
+
+/* =========================
+   FOOTER
+========================= */
+
+.custom-footer{
+
+    background:#F4F0E6;
+
+    padding-top:55px;
+
+    padding-bottom:45px;
+
+    margin-top:70px;
+}
+
+/* Wrapper */
+
+.footer-wrapper{
+
+    padding-left:90px;
+
+    padding-right:90px;
+}
+
+/* Footer Top */
+
+.footer-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+}
+
+/* Footer Menu */
+
+.footer-menu{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.footer-menu a{
+
+    text-decoration:none;
+
+    color:#000;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:0.3s ease;
+}
+
+.footer-menu a:hover{
+
+    color:#F75C2F;
+}
+
+/* Social Media */
+
+.footer-social{
+
+    display:flex;
+
+    gap:16px;
+}
+
+.footer-social a{
+
+    width:42px;
+
+    height:42px;
+
+    background:#000;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    text-decoration:none;
+
+    transition:0.3s ease;
+}
+
+.footer-social a:hover{
+
+    background:#F75C2F;
+
+    transform:translateY(-3px);
+}
+
+/* Line
+
+.footer-line{
+
+    margin-top:35px;
+
+    margin-bottom:40px;
+
+    opacity:0.2;
+} */
+
+/* Sponsor */
+
+.footer-sponsor{
+
+    text-align:center;
+}
+
+.footer-sponsor p{
+
+    font-size:16px;
+
+    font-weight:700;
+
+    margin-top:100px;
+
+    margin-bottom:10px;
+}
+
+.footer-sponsor h1{
+
+    font-size:42px;
+
+    line-height:1.1;
+
+    font-weight:700;
+
+    color:#0D1633;
+}
+
+/* Copyright */
+
+.footer-copy{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#0D1633;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .footer-wrapper{
+
+        padding-left:25px;
+
+        padding-right:25px;
+    }
+
+    .footer-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    .footer-menu{
+
+        flex-direction:column;
+
+        gap:14px;
+    }
+
+    .footer-social{
+
+        margin-top:10px;
+    }
+
+    .footer-sponsor h1{
+
+        font-size:34px;
+    }
+
+}
+
+/* =========================
+    END FOOTER
+========================= */

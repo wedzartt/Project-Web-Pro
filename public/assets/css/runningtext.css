@@ -1,0 +1,84 @@
+
+/* =========================
+   RUNNING TEXT
+========================= */
+
+.running-text{
+
+   width:100%;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            #F6E27A,
+            #65E24A
+        );
+
+    padding:20px 0;
+
+    position:relative;
+
+    z-index:5;
+
+    border-top:4px solid #222;
+    border-bottom:4px solid #222;
+}
+
+
+/* Marquee */
+
+.marquee{
+
+    display:flex;
+
+    width:max-content;
+
+    animation:
+        marqueeMove 25s linear infinite;
+}
+
+/* Content */
+
+.marquee-content{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    padding-right:40px;
+}
+
+/* Text */
+
+.marquee-content span{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    color:#fff;
+
+    text-transform:uppercase;
+
+    white-space:nowrap;
+
+    text-shadow:
+        3px 3px 0 #222;
+}
+
+/* Animation */
+
+@keyframes marqueeMove{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}

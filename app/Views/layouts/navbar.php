@@ -1,10 +1,9 @@
 <nav class="navbar navbar-expand-lg custom-navbar">
-
     <div class="container">
 
         <!-- Logo -->
         <a class="navbar-brand logo-text" href="/">
-            WEDZFEST
+            GENERASI MELODY
         </a>
 
         <!-- Hamburger Mobile -->
@@ -25,21 +24,21 @@
 
                 <li class="nav-item">
                     <a class="nav-link active-link"
-                        href="/">
+                        href="<?= base_url('/#home'); ?>">
                         HOME
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link"
-                        href="#ticket">
+                        href="<?= base_url('/ticket'); ?>">
                         TICKET
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link"
-                        href="/lineup">
+                    <a class="nav-link" 
+                     href="<?= base_url('/#lineup'); ?>">
                         LINE UP
                     </a>
                 </li>
@@ -50,13 +49,7 @@
                         ABOUT
                     </a>
                 </li>
-
-                
-
             </ul>
-
         </div>
-
     </div>
-
 </nav>

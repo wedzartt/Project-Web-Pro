@@ -12,4 +12,13 @@ class Home extends BaseController
 
         return view('home/index', $data);
     }
+
+    public function lineup()
+    {
+        $data = [
+            'title' => 'Home'
+        ];
+
+        return view('home/index', $data);
+    }
 }
