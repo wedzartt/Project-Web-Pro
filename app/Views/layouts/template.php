@@ -31,9 +31,13 @@
     <link rel="stylesheet"
         href="<?= base_url('assets/css/footer.css'); ?>">
 
-    <!-- Ticket CSS -->
+    <!-- Ticket Card CSS -->
     <link rel="stylesheet"
-        href="<?= base_url('assets/css/ticket.css'); ?>">
+        href="<?= base_url('assets/css/ticket_card.css'); ?>">
+    
+    <!-- Ticket Form Ticket CSS -->
+    <link rel="stylesheet"
+        href="<?= base_url('assets/css/ticket_form.css'); ?>">
 
     <!-- Google fonts -->
     <link rel="preconnect"
@@ -43,8 +47,15 @@
         href="https://fonts.gstatic.com"
         crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"> -->
+
+    <!-- Google fonts untuk footer (gambar instagram, youtube dkk)-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>

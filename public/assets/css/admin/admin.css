@@ -1,0 +1,210 @@
+body{
+
+    margin:0;
+    padding:0;
+    font-family:'Fredoka', sans-serif;
+    background:#F7F3EB;
+}
+
+/* Wrapper */
+
+.admin-wrapper{
+
+    display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+
+    width:260px;
+    min-height:100vh;
+
+    background:#0F766E;
+
+    padding:30px 20px;
+
+    color:white;
+}
+
+.logo{
+
+    font-size:36px;
+    font-weight:700;
+
+    margin-bottom:50px;
+
+    color:#FF6B35;
+}
+
+.menu{
+
+    list-style:none;
+    padding:0;
+}
+
+.menu li{
+
+    margin-bottom:15px;
+}
+
+.menu li a{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    transition:0.3s;
+}
+
+.menu li a:hover{
+
+    background:#FF6B35;
+}
+
+/* Main */
+
+.main-content{
+
+    flex:1;
+}
+
+/* Navbar */
+
+.topbar{
+
+    background:white;
+
+    padding:20px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:
+        1px solid rgba(0,0,0,0.06);
+}
+
+.page-title{
+
+    font-weight:600;
+}
+
+.admin-profile{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.profile-img{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+}
+
+/* Content */
+
+.content-area{
+
+    padding:40px;
+}
+
+/* Cards */
+
+.card-stat{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.04);
+}
+
+.card-stat h6{
+
+    color:#777;
+}
+
+.card-stat h2{
+
+    margin-top:15px;
+
+    font-size:34px;
+
+    font-weight:700;
+}
+
+.orange{
+
+    border-left:6px solid #FF6B35;
+}
+
+.green{
+
+    border-left:6px solid #16A34A;
+}
+
+.purple{
+
+    border-left:6px solid #7C3AED;
+}
+
+/* Table */
+
+.table-wrapper{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.04);
+}
+
+.table{
+
+    vertical-align:middle;
+}
+
+/* Button */
+
+.btn-custom{
+
+    background:#FF6B35;
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+}
+
+/* Footer */
+
+.footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#777;
+}

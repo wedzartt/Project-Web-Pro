@@ -1,0 +1,509 @@
+/* ===================================
+   TICKET SECTION
+=================================== */
+
+.ticket-section{
+
+    padding:
+        110px 0;
+
+    background:
+        #F5F1E8;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* Background Texture */
+
+.ticket-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+        radial-gradient(
+            rgba(0,0,0,0.03) 1px,
+            transparent 1px
+        );
+
+    background-size:18px 18px;
+
+    opacity:0.4;
+
+    pointer-events:none;
+}
+
+/* ===================================
+   TITLE
+=================================== */
+
+.ticket-title{
+
+    text-align:center;
+
+    font-size:64px;
+
+    font-weight:800;
+
+    color:#F75C2F;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    margin-bottom:70px;
+
+    text-shadow:
+        4px 4px 0 rgba(0,0,0,0.08);
+}
+
+/* ===================================
+   WRAPPER
+=================================== */
+
+.ticket-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:stretch;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* ===================================
+   CARD
+=================================== */
+
+.ticket-card{
+
+    width:320px;
+
+    min-height:560px;
+
+    border-radius:38px;
+
+    padding:34px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:0.4s ease;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.12);
+
+    border:
+        4px solid rgba(255,255,255,0.35);
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+/* Hover */
+
+.ticket-card:hover{
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 22px 45px rgba(0,0,0,0.16);
+}
+
+/* ===================================
+   DAY 1
+=================================== */
+
+.early-card{
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFD95A,
+            #FFAA1D
+        );
+}
+
+/* ===================================
+   DAY 2
+=================================== */
+
+.presale-card{
+
+    background:
+        linear-gradient(
+            135deg,
+            #84F29B,
+            #32C98A
+        );
+}
+
+/* ===================================
+   2 DAY PASS
+=================================== */
+
+.regular-card{
+
+    background:
+        linear-gradient(
+            135deg,
+            #17C6BC,
+            #0D9187
+        );
+}
+
+/* Featured */
+
+.featured-card{
+
+    transform:scale(1.01);
+
+    margin-top:-8px;
+
+    border:
+        5px solid rgba(255,255,255,0.5);
+}
+
+/* ===================================
+   DECORATION
+=================================== */
+
+.ticket-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:200px;
+
+    height:200px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,0.12);
+
+    top:-70px;
+
+    right:-50px;
+}
+
+.ticket-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    bottom:-40px;
+
+    left:-30px;
+}
+
+/* ===================================
+   BADGE
+=================================== */
+
+.ticket-badge{
+
+    position:absolute;
+
+    top:24px;
+
+    right:24px;
+
+    padding:
+        10px 20px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.12);
+}
+
+/* Sold Out */
+
+.soldout{
+
+    background:#FF5B5B;
+
+    color:white;
+}
+
+/* Available */
+
+.available{
+
+    background:white;
+
+    color:#111;
+}
+
+/* Best Value */
+
+.comingsoon{
+
+    background:#1D1D1D;
+
+    color:white;
+}
+
+/* ===================================
+   ICON
+=================================== */
+
+.ticket-icon{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+    filter:
+        drop-shadow(
+            0 4px 8px rgba(0,0,0,0.15)
+        );
+}
+
+/* ===================================
+   DATE
+=================================== */
+
+.ticket-date{
+
+    font-size:13px;
+
+    font-weight:700;
+
+    color:rgba(255,255,255,0.9);
+
+    letter-spacing:2px;
+
+    margin-bottom:16px;
+
+    text-transform:uppercase;
+}
+
+/* ===================================
+   TICKET NAME
+=================================== */
+
+.ticket-name{
+
+    font-size:46px;
+
+    line-height:1;
+
+    font-weight:800;
+
+    color:white;
+
+    margin-bottom:24px;
+
+    text-transform:uppercase;
+
+    text-shadow:
+        4px 4px 0 rgba(0,0,0,0.1);
+}
+
+/* ===================================
+   PRICE
+=================================== */
+
+.ticket-price{
+
+    font-size:36px;
+
+    font-weight:800;
+
+    color:white;
+
+    line-height:1.2;
+
+    margin-bottom:28px;
+}
+
+/* ===================================
+   BENEFIT
+=================================== */
+
+.ticket-benefit{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 35px 0;
+
+    flex-grow:1;
+}
+
+.ticket-benefit li{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:white;
+
+    margin-bottom:14px;
+
+    line-height:1.5;
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.ticket-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    height:54px;
+
+    border-radius:999px;
+
+    background:white;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:800;
+
+    transition:0.3s ease;
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* Hover */
+
+.ticket-btn:hover{
+
+    background:#111;
+
+    color:white;
+
+    transform:
+        translateY(-3px);
+}
+
+/* Disabled */
+
+.disabled-btn{
+
+    background:
+        rgba(255,255,255,0.7);
+
+    pointer-events:none;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:1200px){
+
+    .ticket-wrapper{
+
+        gap:24px;
+    }
+
+    .ticket-card{
+
+        width:300px;
+    }
+}
+
+@media(max-width:992px){
+
+    .ticket-wrapper{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .ticket-card{
+
+        width:90%;
+
+        max-width:390px;
+    }
+
+    .featured-card{
+
+        transform:none;
+
+        margin-top:0;
+    }
+}
+
+@media(max-width:768px){
+
+    .ticket-section{
+
+        padding:90px 0;
+    }
+
+    .ticket-title{
+
+        font-size:46px;
+
+        margin-bottom:55px;
+    }
+
+    .ticket-name{
+
+        font-size:38px;
+    }
+
+    .ticket-price{
+
+        font-size:30px;
+    }
+
+    .ticket-card{
+
+        min-height:auto;
+
+        padding:30px;
+    }
+}

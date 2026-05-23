@@ -16,14 +16,16 @@
             #65E24A
         );
 
-    padding:20px 0;
+    /* mengatur besar kecil nya running text */
+    padding:1px;
 
     position:relative;
 
     z-index:5;
-
-    border-top:4px solid #222;
-    border-bottom:4px solid #222;
+    
+    /* bisa diadjust apakah mau pakai border atau engga */
+    border-top:0px solid #222;
+    border-bottom:0px solid #222;
 }
 
 
@@ -56,18 +58,18 @@
 
 .marquee-content span{
 
-    font-size:34px;
+    font-size:26px;
 
-    font-weight:800;
+    font-weight:700;
 
     color:#fff;
 
-    text-transform:uppercase;
+    /* text-transform:uppercase; */
 
     white-space:nowrap;
 
-    text-shadow:
-        3px 3px 0 #222;
+    /* text-shadow:
+        3px 3px 0 #222; */
 }
 
 /* Animation */

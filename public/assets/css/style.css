@@ -14,7 +14,8 @@ html{
 
 
 body {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: 'Fredoka', sans-serif;
     /* background: #f8fafc; */
     overflow-x:hidden;
     color: #111827;
@@ -56,6 +57,8 @@ body::before{
 
 .about-festival{
 
+    margin-top:160px;
+
     padding:0 0 120px;
 
     background:
@@ -68,7 +71,7 @@ body::before{
 
     position:relative;
 
-    margin-top:-5px;
+    /* margin-top: -5 px; */
 }
 
 .festival-box{
@@ -80,14 +83,14 @@ body::before{
 
     border-radius:40px;
 
-    padding:70px;
+    padding:60px;
 
     position:relative;
 
     overflow:hidden;
 
     box-shadow:
-        12px 12px 0 #222;
+        6px 6px 0 #222;
 
     transform:
         translateY(-40px);
@@ -108,7 +111,8 @@ body::before{
     text-transform:uppercase;
 
     text-shadow:
-        4px 4px 0 #222;
+        5px 5px 0 #222;
+
 }
 
 .festival-text{
@@ -180,8 +184,8 @@ body::before{
 
     margin-top:-120px;
 
-    border-top-left-radius:80px;
-    border-top-right-radius:80px;
+    /* border-top-left-radius:px;
+    border-top-right-radius:80px; */
 
     position:relative;
 
@@ -222,7 +226,8 @@ body::before{
 
     color:#fff;
 
-    margin-bottom:70px;
+    margin-bottom:100px;
+    /* margin-bottom:70px; */
 
     text-shadow:
         5px 5px 0 #222;
@@ -247,7 +252,7 @@ body::before{
 
     color:white;
 
-    padding:18px 32px;
+    padding:8px 18px;
 
     border-radius:20px;
 
@@ -258,7 +263,7 @@ body::before{
     font-weight:700;
 
     box-shadow:
-        6px 6px 0 #222;
+        2px 2px 0 #222;
 
     transition:0.3s ease;
 }

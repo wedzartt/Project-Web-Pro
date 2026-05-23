@@ -1,0 +1,152 @@
+/* =========================
+   PURCHASE SECTION
+========================= */
+
+.purchase-section{
+
+    padding:100px 0;
+
+    background:#F4F0E6;
+}
+
+.purchase-box{
+
+    background:#0D8B6C;
+
+    padding:50px;
+
+    border-radius:12px;
+
+    color:white;
+}
+
+/* TITLE */
+
+.purchase-title{
+
+    text-align:center;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+}
+
+/* TABLE */
+
+.ticket-table{
+
+    margin-bottom:50px;
+}
+
+.table-head,
+.table-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:
+        1px dashed rgba(255,255,255,0.4);
+}
+
+.table-head{
+
+    font-weight:700;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+}
+
+.qty-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.qty-box button{
+
+    width:32px;
+    height:32px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    font-weight:bold;
+}
+
+/* BILLING */
+
+.billing-wrapper h3{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    letter-spacing:2px;
+}
+
+.billing-wrapper form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+.billing-wrapper input,
+.billing-wrapper select{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:6px;
+
+    padding:0 18px;
+
+    font-size:16px;
+}
+
+/* BUTTON */
+
+.checkout-btn{
+
+    margin-top:20px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#F75C2F;
+
+    color:white;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    transition:0.3s;
+}
+
+.checkout-btn:hover{
+
+    transform:translateY(-2px);
+
+    opacity:0.9;
+}

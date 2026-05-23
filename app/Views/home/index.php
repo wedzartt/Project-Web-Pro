@@ -25,7 +25,7 @@
             tahun ini.
         </p>
 
-        <div class="hero-buttons">
+         <div class="hero-buttons">
 
             <a href="#ticket" class="btn-ticket">
                 BUY TICKET
@@ -55,31 +55,31 @@
 
         <div class="marquee-content">
 
-            <span>GENERASI MELODY</span>
+            <span>Genarasi Melodi</span>
             <span>•</span>
 
-            <span>MUSIC FESTIVAL</span>
+            <span>Music Festival</span>
             <span>•</span>
 
-            <span>SUMMER VIBES</span>
+            <span>Live Music</span>
             <span>•</span>
 
-            <span>LIVE PERFORMANCE</span>
+            <span>Genarasi Melodi</span>
             <span>•</span>
 
-            <span>INDONESIA FESTIVAL</span>
+            <span>Music Festival</span>
             <span>•</span>
 
-            <span>GENERASI MELODY</span>
+            <span>Live Music</span>
             <span>•</span>
 
-            <span>MUSIC FESTIVAL</span>
+            <span>Genarasi Melodi</span>
             <span>•</span>
 
-            <span>SUMMER VIBES</span>
+            <span>Music Festival</span>
             <span>•</span>
 
-            <span>LIVE PERFORMANCE</span>
+            <span>Live Music</span>
             <span>•</span>
 
         </div>
@@ -196,7 +196,7 @@ ABOUT SECION FESTIVAL 1 (BODY 1)
             </div>
 
             <div class="artist-card">
-                Ndx-aka
+                Ndx A.K.A
             </div>
 
             <div class="artist-card">
@@ -204,7 +204,7 @@ ABOUT SECION FESTIVAL 1 (BODY 1)
             </div>
 
             <div class="artist-card">
-                Fourtwenty
+                Fourtwnty
             </div>
 
         </div>
