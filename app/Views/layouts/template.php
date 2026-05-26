@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><?= $title ?? 'WedzFest'; ?></title>
+    <title><?= $title ?? 'Generasi Melody'; ?></title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -34,10 +34,15 @@
     <!-- Ticket Card CSS -->
     <link rel="stylesheet"
         href="<?= base_url('assets/css/ticket_card.css'); ?>">
-    
+
     <!-- Ticket Form Ticket CSS -->
     <link rel="stylesheet"
         href="<?= base_url('assets/css/ticket_form.css'); ?>">
+
+    <!-- Payment Lengkap CSS -->
+    <link
+        rel="stylesheet"
+        href="<?= base_url('assets/css/payment/style.css'); ?>">
 
     <!-- Google fonts -->
     <link rel="preconnect"
@@ -71,6 +76,10 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link untuk menyambungkan java script di file public seperti css -->
+
+    <script src="<?= base_url('assets/js/ticket.js'); ?>"></script>
 
 </body>
 

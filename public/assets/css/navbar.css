@@ -1,9 +1,8 @@
+.custom-navbar{
 
-/* =========================
-   NAVBAR
-========================= */
+    background:#F4F0E6;
 
-.custom-navbar {
+    padding:18px 0;
 
     position:fixed;
 
@@ -12,58 +11,53 @@
 
     width:100%;
 
-    z-index:9999;
-
-    background:#F4F0E6;
-
-    backdrop-filter:blur(10px);
-
-    -webkit-backdrop-filter:blur(10px);
-
-    padding-top:8px;
-    padding-bottom:8px;
+    z-index:999;
 
     border-bottom:
-        1px solid rgba(0,0,0,0.08);
-
-    /* dibawah ada kayak sedikit garis hitam */
-    box-shadow:
-        0 2px 10px rgba(0,0,0,0.03);
-
-    transition:0.3s ease;
+        2px solid rgba(0,0,0,0.09);
 }
 
-.custom-navbar.scrolled{
-    
-    box-shadow:
-        0 8px 30px rgba(0,0,0,0.08);
+.custom-navbar .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
 }
 
-.logo-text {
+.navbar-collapse{
 
-    font-size: 34px;
-
-    font-weight: 700;
-
-    color: #F75C2F !important;
-
-    text-decoration: none;
+    justify-content:flex-end;
 }
 
-.navbar-nav {
+.navbar-nav{
 
-    gap: 10px;
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    list-style:none;
 }
 
-.nav-link {
+.nav-link{
 
-    font-size: 16px;
+    text-decoration:none;
 
-    font-weight: 600;
+    font-weight:600;
 
-    color: #149C93 !important;
+    color:#149C93 !important;
 }
 
-/* =========================
-   END NAVBAR
-========================= */
+.logo-text{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:#F75C2F !important;
+
+    text-decoration:none;
+}

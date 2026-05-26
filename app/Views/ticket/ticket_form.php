@@ -6,66 +6,179 @@
 
         <div class="purchase-box">
 
+            <!-- TITLE -->
+
             <h2 class="purchase-title">
                 TICKET PURCHASE
             </h2>
 
-            <!-- TABLE -->
+            <!-- =========================
+                 TICKET TABLE
+            ========================= -->
+
             <div class="ticket-table">
 
+                <!-- TABLE HEAD -->
+
                 <div class="table-head">
+
                     <span>ADMISSION</span>
+
                     <span>PRICE</span>
+
                     <span>QTY</span>
+
                 </div>
+
+                <!-- TABLE ROW -->
 
                 <div class="table-row">
 
-                    <span>DAY 2 PASS</span>
+                    <!-- Ticket Name -->
 
-                    <span>Rp 550.000</span>
+                    <span class="ticket-type">
+
+                        DAY 2 PASS
+
+                    </span>
+
+                    <!-- Ticket Price -->
+
+                    <span class="ticket-price">
+
+                        Rp 550.000
+
+                    </span>
+
+                    <!-- Quantity -->
 
                     <div class="qty-box">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+
+                        <!-- Minus -->
+
+                        <button
+                            type="button"
+                            class="qty-btn minus">
+
+                            -
+
+                        </button>
+
+                        <!-- Quantity Input -->
+
+                        <input
+                            type="text"
+                            id="ticket-qty"
+                            name="quantity"
+                            value="1"
+                            min="1"
+                            readonly>
+
+                        <!-- Plus -->
+
+                        <button
+                            type="button"
+                            class="qty-btn plus">
+
+                            +
+
+                        </button>
+
                     </div>
 
                 </div>
 
             </div>
 
-            <!-- FORM -->
+            <!-- =========================
+                 BILLING FORM
+            ========================= -->
+
             <div class="billing-wrapper">
 
-                <h3>BILLING DETAILS</h3>
+                <h3>
+                    BILLING DETAILS
+                </h3>
 
-                <form action="" method="post">
+                <!-- FORM -->
+
+                <form
+                    action="<?= base_url('/payment'); ?>"
+                    method="post">
+
+                    <!-- Hidden Ticket -->
+
+                    <input
+                        type="hidden"
+                        name="quantity"
+                        id="hidden-qty"
+                        value="1">
+
+                    <input
+                        type="hidden"
+                        name="ticket_type"
+                        value="DAY 2 PASS">
+
+                    <!-- Email -->
 
                     <input
                         type="email"
-                        placeholder="Email Address">
+                        name="email"
+                        placeholder="Email Address"
+                        required>
+
+                    <!-- Full Name -->
 
                     <input
                         type="text"
-                        placeholder="Full Name">
+                        name="fullname"
+                        placeholder="Full Name"
+                        required>
+
+                    <!-- Phone -->
 
                     <input
                         type="text"
-                        placeholder="Phone Number">
+                        name="phone"
+                        placeholder="Phone Number"
+                        required>
 
-                    <select>
-                        <option>Gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
+                    <!-- Gender -->
+
+                    <select
+                        name="gender"
+                        required>
+
+                        <option value="">
+                            Gender
+                        </option>
+
+                        <option value="Male">
+                            Male
+                        </option>
+
+                        <option value="Female">
+                            Female
+                        </option>
+
                     </select>
 
-                    <input
-                        type="text"
-                        placeholder="Province">
+                    <!-- Province -->
 
                     <input
-                        type="date">
+                        type="text"
+                        name="province"
+                        placeholder="Province"
+                        required>
+
+                    <!-- Date Birth -->
+
+                    <input
+                        type="date"
+                        name="birthdate"
+                        required>
+
+                    <!-- Submit -->
 
                     <button
                         class="checkout-btn"

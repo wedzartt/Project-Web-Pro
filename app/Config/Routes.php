@@ -9,6 +9,11 @@ $routes->get('/', 'Home::index');
 
 $routes->get('/ticket', 'Tickets::ticket');
 
+$routes->get('/payment', 'Payment::order_summary');
+
+
+$routes->post('/payment', 'Payment::process');
+
 $routes->group('admin', function($routes){
 
     // a nya harus kecil meyesuaikan nama folder

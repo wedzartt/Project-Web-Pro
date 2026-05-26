@@ -2,7 +2,7 @@
     <div class="container">
 
         <!-- Logo -->
-        <a class="navbar-brand logo-text" href="/">
+        <a class="navbar-brand logo-text" href="<?= base_url('/#home'); ?>">
             GENERASI MELODY
         </a>
 
