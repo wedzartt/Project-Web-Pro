@@ -4,6 +4,4 @@
 
 <?= $this->include('ticket/ticket_card') ?>
 
-<?= $this->include('ticket/ticket_form') ?>
-
 <?= $this->endSection(); ?>

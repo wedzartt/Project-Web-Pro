@@ -5,14 +5,26 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
+//sebagai alamat, nama file dari controller :: nama function di contoller
 $routes->get('/', 'Home::index');
 
-$routes->get('/ticket', 'Tickets::ticket');
+// AWAL FLOW PEMBELIAN TICKET
+// untuk ngakses ke information ticket
+$routes->get('/ticket', 'Tickets::index');
 
-$routes->get('/payment', 'Payment::order_summary');
+// untuk ngakses ke form ticket
+// $routes->get('/ticket/form', 'Tickets::checkout');
 
+$routes->get(
+    '/ticket/checkout/(:num)',
+    'Tickets::checkout/$1'
+);
+// AKHIR FLOW PEMBELIAN TICKET
 
-$routes->post('/payment', 'Payment::process');
+$routes->post('/payment', 'Checkout::process');
+
+$routes->post('/payment/succes', 'Checkout::succes');
 
 $routes->group('admin', function($routes){
 

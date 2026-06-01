@@ -3,8 +3,9 @@
 namespace App\Controllers;
 
 use App\Models\OrderModel;
+// use App\Models\TransactionModel;
 
-class Payment extends BaseController
+class Checkout extends BaseController
 {
     public function process()
     {
@@ -34,7 +35,7 @@ class Payment extends BaseController
 
             'total_price' => $total,
 
-            'payment_method' => 'BCA'
+            // 'payment_method' => 'BCA'
 
         ]);
 
@@ -48,10 +49,48 @@ class Payment extends BaseController
 
             'quantity' => $quantity,
 
-            'ticket_type' => $this->request->getPost('ticket_type')
+            'ticket_type' => $this->request->getPost('ticket_type'),
+
+            'gender' => $this->request->getPost('gender'),
+
+            'province' => $this->request->getPost('province'),
+
+            'birthdate' => $this->request->getPost('birthdate')
 
         ];
 
         return view('payment/index', $data);
+    }
+
+    // public function payment($id)
+    // {
+    //     $data = [
+    //         'payment_method' => $this->request->getPost('payment_method'),
+    //     ];
+
+    //     dd(
+    //         $this->request
+    //             ->getPost('fullname')
+    //     );
+
+    //     return view('payment/succes', $data);
+    // }
+
+    // public function paymentProcess($id)
+    // {
+
+    //     dd(
+    //         $this->request
+    //             ->getPost('payment_method')
+    //     );
+    // }
+
+    public function succes()
+    {
+
+        dd(
+            $this->request
+                ->getPost('payment_method')
+        );
     }
 }

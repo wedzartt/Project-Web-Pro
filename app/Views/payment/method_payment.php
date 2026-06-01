@@ -4,7 +4,9 @@
         PILIH METODE PEMBAYARAN
     </h2>
 
-    <form action="#">
+    <form
+        action="<?= base_url('/payment/succes'); ?>"
+        method="post">
 
         <!-- METHOD ITEM -->
 
@@ -12,7 +14,8 @@
 
             <input
                 type="radio"
-                name="payment_method">
+                name="payment_method"
+                value="Bca">
 
             <span>
                 BCA Virtual Account
@@ -24,7 +27,8 @@
 
             <input
                 type="radio"
-                name="payment_method">
+                name="payment_method"
+                value="Dana">
 
             <span>
                 DANA
@@ -36,7 +40,8 @@
 
             <input
                 type="radio"
-                name="payment_method">
+                name="payment_method"
+                value="Gopay">
 
             <span>
                 GOPAY
@@ -48,7 +53,8 @@
 
             <input
                 type="radio"
-                name="payment_method">
+                name="payment_method"
+                value="Qris">
 
             <span>
                 QRIS

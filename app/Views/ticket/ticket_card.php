@@ -27,7 +27,7 @@
                 <!-- Badge -->
 
                 <span class="ticket-badge soldout">
-                    SOLD OUT
+                    Available
                 </span>
 
                 <!-- Icon -->
@@ -45,13 +45,13 @@
                 <!-- Ticket Name -->
 
                 <h2 class="ticket-name">
-                    DAY 1 PASS
+                    DAY 1
                 </h2>
 
                 <!-- Price -->
 
                 <div class="ticket-price">
-                    START FROM <br>
+                    <!-- START FROM <br> -->
                     Rp 350K
                 </div>
 
@@ -74,12 +74,21 @@
                 </ul>
 
                 <!-- Button -->
-
-                <a
+                <!-- BISA DISABLE DENGAN CARA DIBAWAH INI -->
+                <!-- class="ticket-btn disabled-btn" -->
+                <!-- <a
                     href="#ticket-form"
                     class="ticket-btn disabled-btn">
 
-                    Sold Out
+                    Select Ticket
+
+                </a> -->
+
+                <a
+                    href="<?= base_url('/ticket/checkout/1 '); ?>"
+                    class="ticket-btn">
+
+                    Select Ticket
 
                 </a>
 
@@ -112,13 +121,13 @@
                 <!-- Ticket Name -->
 
                 <h2 class="ticket-name">
-                    DAY 2 PASS
+                    DAY 2
                 </h2>
 
                 <!-- Price -->
 
                 <div class="ticket-price">
-                    START FROM <br>
+                    <!-- START FROM <br> -->
                     Rp 550K
                 </div>
 
@@ -143,7 +152,7 @@
                 <!-- Button -->
 
                 <a
-                    href="#ticket-form"
+                    href="<?= base_url('/ticket/checkout/2'); ?>"
                     class="ticket-btn">
 
                     Select Ticket
@@ -185,7 +194,7 @@
                 <!-- Price -->
 
                 <div class="ticket-price">
-                    START FROM <br>
+                    <!-- START FROM <br> -->
                     Rp 750K
                 </div>
 
@@ -210,7 +219,7 @@
                 <!-- Button -->
 
                 <a
-                    href="#ticket-form"
+                    href="<?= base_url('/ticket/checkout/3'); ?>"
                     class="ticket-btn">
 
                     Select Ticket

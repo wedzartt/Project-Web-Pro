@@ -16,79 +16,84 @@
                  TICKET TABLE
             ========================= -->
 
-            <div class="ticket-table">
+            <!-- BARU BUKA -->
 
-                <!-- TABLE HEAD -->
+            <!-- TABLE HEAD -->
 
-                <div class="table-head">
+            <div class="table-head">
 
-                    <span>ADMISSION</span>
+                <span>ADMISSION</span>
 
-                    <span>PRICE</span>
+                <span>PRICE</span>
 
-                    <span>QTY</span>
+                <span>QTY</span>
 
-                </div>
+            </div>
 
-                <!-- TABLE ROW -->
+            <!-- PENUTUP HEAD -->
 
-                <div class="table-row">
+            <div class="table-row">
 
-                    <!-- Ticket Name -->
+                <!-- Ticket Name -->
 
-                    <span class="ticket-type">
+                <span class="ticket-type">
 
-                        DAY 2 PASS
+                    <?= $ticket['ticket_type']; ?>
 
-                    </span>
+                </span>
 
-                    <!-- Ticket Price -->
+                <!-- Ticket Price -->
 
-                    <span class="ticket-price">
+                <span class="ticket-price">
 
-                        Rp 550.000
+                    Rp <?= number_format(
+                            $ticket['price'],
+                            0,
+                            ',',
+                            '.'
+                        ); ?>
 
-                    </span>
+                </span>
 
-                    <!-- Quantity -->
+                <!-- Quantity -->
 
-                    <div class="qty-box">
+                <div class="qty-box">
 
-                        <!-- Minus -->
+                    <!-- Minus -->
 
-                        <button
-                            type="button"
-                            class="qty-btn minus">
+                    <button
+                        type="button"
+                        class="qty-btn minus">
 
-                            -
+                        -
 
-                        </button>
+                    </button>
 
-                        <!-- Quantity Input -->
+                    <!-- Quantity Input -->
 
-                        <input
-                            type="text"
-                            id="ticket-qty"
-                            name="quantity"
-                            value="1"
-                            min="1"
-                            readonly>
+                    <input
+                        type="text"
+                        id="ticket-qty"
+                        name="quantity"
+                        value="1"
+                        min="1"
+                        readonly>
 
-                        <!-- Plus -->
+                    <!-- Plus -->
 
-                        <button
-                            type="button"
-                            class="qty-btn plus">
+                    <button
+                        type="button"
+                        class="qty-btn plus">
 
-                            +
+                        +
 
-                        </button>
-
-                    </div>
+                    </button>
 
                 </div>
 
             </div>
+
+            <!-- BARU SELESAI -->
 
             <!-- =========================
                  BILLING FORM
@@ -108,7 +113,8 @@
 
                     <!-- Hidden Ticket -->
 
-                    <input
+                    <!-- yang asli -->
+                    <!-- <input
                         type="hidden"
                         name="quantity"
                         id="hidden-qty"
@@ -117,7 +123,20 @@
                     <input
                         type="hidden"
                         name="ticket_type"
-                        value="DAY 2 PASS">
+                        value="DAY 2 PASS"> -->
+                    <!-- tutup asli -->
+
+                    <!-- baru -->
+                    <input
+                        type="hidden"
+                        name="ticket_type"
+                        value="<?= $ticket['ticket_type']; ?>">
+
+                    <input
+                        type="hidden"
+                        name="ticket_price"
+                        value="<?= $ticket['price']; ?>">
+                    <!-- tutup baru -->
 
                     <!-- Email -->
 
