@@ -12,6 +12,8 @@ class OrderModel extends Model
 
     protected $allowedFields = [
 
+        'order_code',
+
         'fullname',
 
         'email',
@@ -26,10 +28,14 @@ class OrderModel extends Model
 
         'ticket_type',
 
+        'ticket_price',
+
         'quantity',
 
         'total_price',
 
-        'payment_method'
+        'payment_method',
+
+        'payment_status'
     ];
 }

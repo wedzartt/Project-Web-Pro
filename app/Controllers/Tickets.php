@@ -22,7 +22,7 @@ class Tickets extends BaseController
         {
             $ticket = [
 
-                'ticket_type' => 'DAY 1 PASS',
+                'ticket_type' => 'DAY 1',
 
                 'price' => 350000
 
@@ -32,7 +32,7 @@ class Tickets extends BaseController
         {
             $ticket = [
 
-                'ticket_type' => 'DAY 2 PASS',
+                'ticket_type' => 'DAY 2',
 
                 'price' => 550000
 

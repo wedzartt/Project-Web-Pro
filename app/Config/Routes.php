@@ -20,13 +20,25 @@ $routes->get(
     '/ticket/checkout/(:num)',
     'Tickets::checkout/$1'
 );
+
+$routes->get(
+    '/payment/succes/(:num)',
+    'Payment::succes/$1'
+);
+
+$routes->post(
+    '/payment/process',
+    'Payment::processPayment'
+);
+
+
 // AKHIR FLOW PEMBELIAN TICKET
 
 $routes->post('/payment', 'Checkout::process');
 
 $routes->post('/payment/succes', 'Checkout::succes');
 
-$routes->group('admin', function($routes){
+$routes->group('admin', function ($routes) {
 
     // a nya harus kecil meyesuaikan nama folder
     $routes->get('dashboard', 'Admin\Dashboard::index');
@@ -36,7 +48,6 @@ $routes->group('admin', function($routes){
     $routes->get('transaction', 'Admin\Transaction::index');
 
     $routes->get('user', 'Admin\User::index');
-
 });
 
 

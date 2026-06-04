@@ -112,9 +112,7 @@
                     method="post">
 
                     <!-- Hidden Ticket -->
-
-                    <!-- yang asli -->
-                    <!-- <input
+                    <input
                         type="hidden"
                         name="quantity"
                         id="hidden-qty"
@@ -123,23 +121,16 @@
                     <input
                         type="hidden"
                         name="ticket_type"
-                        value="DAY 2 PASS"> -->
-                    <!-- tutup asli -->
-
-                    <!-- baru -->
-                    <input
-                        type="hidden"
-                        name="ticket_type"
-                        value="<?= $ticket['ticket_type']; ?>">
+                        value="<?= $ticket              ['ticket_type']; ?>">
 
                     <input
                         type="hidden"
                         name="ticket_price"
-                        value="<?= $ticket['price']; ?>">
-                    <!-- tutup baru -->
+                        value="<?= $ticket
+                        ['price']; ?>">
+                    <!-- Hidden Ticket -->
 
                     <!-- Email -->
-
                     <input
                         type="email"
                         name="email"
@@ -147,7 +138,6 @@
                         required>
 
                     <!-- Full Name -->
-
                     <input
                         type="text"
                         name="fullname"
@@ -155,7 +145,6 @@
                         required>
 
                     <!-- Phone -->
-
                     <input
                         type="text"
                         name="phone"
@@ -163,14 +152,9 @@
                         required>
 
                     <!-- Gender -->
-
                     <select
                         name="gender"
                         required>
-
-                        <option value="">
-                            Gender
-                        </option>
 
                         <option value="Male">
                             Male
@@ -183,7 +167,6 @@
                     </select>
 
                     <!-- Province -->
-
                     <input
                         type="text"
                         name="province"
@@ -191,7 +174,6 @@
                         required>
 
                     <!-- Date Birth -->
-
                     <input
                         type="date"
                         name="birthdate"

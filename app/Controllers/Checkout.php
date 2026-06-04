@@ -9,13 +9,22 @@ class Checkout extends BaseController
 {
     public function process()
     {
-        $quantity = $this->request->getPost('quantity');
 
-        $total = 550000 * $quantity;
+        // dd($this->request->getPost());
+
+        $quantity = $this->request->getPost('quantity');    
+
+        $ticketPrice = $this->request->getPost('ticket_price');
+
+        $total = $ticketPrice * $quantity;
+
+        $orderCode = 'ORD-' . date('YmdHis');
 
         $orderModel = new OrderModel();
 
         $orderModel->save([
+
+            'order_code' => $orderCode,
 
             'fullname' => $this->request->getPost('fullname'),
 
@@ -31,6 +40,8 @@ class Checkout extends BaseController
 
             'ticket_type' => $this->request->getPost('ticket_type'),
 
+            'ticket_price' => $this->request->getPost('ticket_price'),
+
             'quantity' => $quantity,
 
             'total_price' => $total,
@@ -39,7 +50,14 @@ class Checkout extends BaseController
 
         ]);
 
+        $orderId = $orderModel->getInsertID();
+
+        // return redirect()->to('/payment/succes/' . $orderId);
+        
+
         $data = [
+
+            'order_id' => $orderId,
 
             'fullname' => $this->request->getPost('fullname'),
 
@@ -55,26 +73,32 @@ class Checkout extends BaseController
 
             'province' => $this->request->getPost('province'),
 
-            'birthdate' => $this->request->getPost('birthdate')
+            'birthdate' => $this->request->getPost('birthdate'),
+
+            'total_price' => $total,
+
+            'ticket_price' => $ticketPrice
 
         ];
+
+        // return redirect()->to('/payment/succes/' . $order);
+
+        // dd($data);   
 
         return view('payment/index', $data);
     }
 
-    // public function payment($id)
-    // {
-    //     $data = [
-    //         'payment_method' => $this->request->getPost('payment_method'),
-    //     ];
+    public function index($id)
+    {
 
-    //     dd(
-    //         $this->request
-    //             ->getPost('fullname')
-    //     );
+        $orderModel = new OrderModel();
 
-    //     return view('payment/succes', $data);
-    // }
+        $order = $orderModel->find($id);
+
+        return view('payment/index', [
+            'order' => $order
+        ]);
+    }
 
     // public function paymentProcess($id)
     // {
@@ -88,9 +112,10 @@ class Checkout extends BaseController
     public function succes()
     {
 
-        dd(
-            $this->request
-                ->getPost('payment_method')
-        );
+        // dd(
+        //     $this->request
+        //         ->getPost('payment_method')
+        // );
+        return view('payment/succes');
     }
 }

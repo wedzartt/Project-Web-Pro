@@ -15,11 +15,11 @@
         <div class="event-info">
 
             <h3>
-                PESTAPORA 2026
+                Melody Fest 2026
             </h3>
 
             <p>
-                23 - 25 Januari 2026
+                24 - 25 July 2026
             </p>
 
             <p>
@@ -60,7 +60,15 @@
             <span>Price</span>
 
             <span>
-                Rp 550.000
+
+            Rp
+                <?= number_format(
+                    $ticket_price ?? 
+                    0, 
+                    0,
+                    ',',
+                    '.'
+                ); ?>
             </span>
 
         </div>
