@@ -128,7 +128,7 @@
 
                 <div class="ticket-price">
                     <!-- START FROM <br> -->
-                    Rp 550K
+                    Rp 350K
                 </div>
 
                 <!-- Benefit -->
@@ -195,7 +195,7 @@
 
                 <div class="ticket-price">
                     <!-- START FROM <br> -->
-                    Rp 750K
+                    Rp 600K
                 </div>
 
                 <!-- Benefit -->

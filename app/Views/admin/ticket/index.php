@@ -6,7 +6,7 @@
 
     <div class="d-flex
         justify-content-between
-        align-items-center
+        align-items-centerdd($data)
         mb-4">
 
         <h4>Ticket Management</h4>
@@ -33,27 +33,27 @@
         </thead>
 
         <tbody>
+    
+                <tr>
+                    <td>Day 1</td>
+                    <td>Rp 350.000</td>
+                    <td>500</td>
+                    <td><?= $day1_sold; ?></td>
+                </tr>
 
-            <tr>
-                <td>Day 1 Pass</td>
-                <td>Rp 350K</td>
-                <td>500</td>
-                <td>320</td>
-            </tr>
+                <tr>
+                    <td>Day 2</td>
+                    <td>Rp 350.000</td>
+                    <td>500</td>
+                    <td><?= $day2_sold; ?></td>
+                </tr>
 
-            <tr>
-                <td>Day 2 Pass</td>
-                <td>Rp 350K</td>
-                <td>500</td>
-                <td>280</td>
-            </tr>
-
-            <tr>
-                <td>Regular Pass</td>
-                <td>Rp 650K</td>
-                <td>1000</td>
-                <td>750</td>
-            </tr>
+                <tr>
+                    <td>2 Day Pass</td>
+                    <td>Rp 600.000</td>
+                    <td>1000</td>
+                    <td><?= $day3_sold; ?></td>
+                </tr>
 
         </tbody>
 

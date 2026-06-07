@@ -200,11 +200,58 @@ body{
 
 /* Footer */
 
-.footer{
+/* =========================
+   SPONSOR
+========================= */
+/* 
+.footer-sponsor{
 
     text-align:center;
 
-    padding:25px;
+    padding-top:45px;
+}
 
-    color:#777;
+.footer-sponsor p{
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    color:#555;
+
+    margin-bottom:12px;
+}
+
+.footer-sponsor h1{
+
+    font-size:40px;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+    color:#0D1633;
+
+    margin:0;
+} */
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-copy{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#666;
+
+    letter-spacing:0.4px;
 }

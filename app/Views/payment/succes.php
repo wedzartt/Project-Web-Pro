@@ -21,7 +21,7 @@
         <h1>Payment Successful</h1>
 
         <p class="subtitle">
-            Thank you for purchasing Generasi Melody Festival tickets.
+            Thank you for purchasing Generasi Melodi Festival tickets.
         </p>
 
         <div class="divider"></div>

@@ -15,31 +15,31 @@
         <thead>
 
             <tr>
-                <th>Name</th>
+                <th>Full Name</th>
                 <th>Email</th>
-                <th>Ticket Bought</th>
+                <th>Phone</th>
+                <th>Gender</th>
+                <th>Province</th>
+                <th>Birth Date</th>
             </tr>
 
         </thead>
 
         <tbody>
 
-            <tr>
-                <td>Ariq</td>
-                <td>ariq@mail.com</td>
-                <td>2</td>
-            </tr>
-
-            <tr>
-                <td>Rizky</td>
-                <td>rizky@mail.com</td>
-                <td>1</td>
-            </tr>
+            <?php foreach ($user_data as $user): ?>
+                <tr>
+                    <td><?= $user['fullname'] ?></td>
+                    <td><?= $user['email'] ?></td>
+                    <td><?= $user['phone'] ?></td>
+                    <td><?= $user['gender'] ?></td>
+                    <td><?= $user['province'] ?></td>
+                    <td><?= $user['birthdate'] ?></td>
+                </tr>
+            <?php endforeach; ?>
 
         </tbody>
-
     </table>
-
 </div>
 
 <?= $this->endSection() ?>

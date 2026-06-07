@@ -3,7 +3,7 @@
    RUNNING TEXT
 ========================= */
 
-.running-text{
+.running-text1{
 
    width:100%;
 
@@ -12,8 +12,8 @@
     background:
         linear-gradient(
             90deg,
-            #F6E27A,
-            #65E24A
+            #028728,
+            #15da40
         );
 
     /* mengatur besar kecil nya running text */
@@ -28,6 +28,31 @@
     border-bottom:0px solid #222;
 }
 
+
+.running-text2{
+
+   width:100%;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            #280df4,
+            #8808a5
+        );
+
+    /* mengatur besar kecil nya running text */
+    padding:1px;
+
+    position:relative;
+
+    z-index:5;
+    
+    /* bisa diadjust apakah mau pakai border atau engga */
+    border-top:0px solid #222;
+    border-bottom:0px solid #222;
+}
 
 /* Marquee */
 

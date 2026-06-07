@@ -8,14 +8,10 @@
 
     <div class="event-card">
 
-        <img
-            src="<?= base_url('assets/images/poster.jpg'); ?>"
-            alt="Poster">
-
         <div class="event-info">
 
             <h3>
-                Melody Fest 2026
+                Generasi Melodi 2026
             </h3>
 
             <p>
@@ -78,10 +74,9 @@
             <span>Total</span>
 
             <span>
-
                 Rp
                 <?= number_format(
-                    550000 * ($quantity ?? 1),
+                    ($ticket_price ?? 0) * ($quantity ?? 1),
                     0,
                     ',',
                     '.'

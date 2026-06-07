@@ -34,7 +34,7 @@ class Tickets extends BaseController
 
                 'ticket_type' => 'DAY 2',
 
-                'price' => 550000
+                'price' => 350000
 
             ];
         }
@@ -44,7 +44,7 @@ class Tickets extends BaseController
 
                 'ticket_type' => '2 DAY PASS',
 
-                'price' => 750000
+                'price' => 600000
 
             ];
         }

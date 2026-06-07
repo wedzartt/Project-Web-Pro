@@ -3,7 +3,7 @@
     <div class="logo">
         <a class="nav-link active-link"
             href="<?= base_url('/admin/dashboard'); ?>">
-            Generasi Melody
+            GENERASI MELODI
         </a>
     </div>
 

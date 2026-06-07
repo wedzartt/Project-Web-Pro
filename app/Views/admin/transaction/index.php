@@ -15,40 +15,48 @@
         <thead>
 
             <tr>
-                <th>Invoice</th>
-                <th>User</th>
-                <th>Ticket</th>
-                <th>Total</th>
-                <th>Status</th>
+                <th>Order Code</th>
+                <th>Full Name</th>
+                <th>Ticket Type</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total Price</th>    
+                <th>Payment Status</th>
             </tr>
 
         </thead>
 
         <tbody>
 
-            <tr>
-                <td>#TRX001</td>
-                <td>Ariq</td>
-                <td>Day 1 Pass</td>
-                <td>Rp 700K</td>
-                <td>
-                    <span class="badge bg-success">
-                        Paid
-                    </span>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#TRX002</td>
-                <td>Fajar</td>
-                <td>Regular Pass</td>
-                <td>Rp 650K</td>
-                <td>
-                    <span class="badge bg-danger">
-                        Cancel
-                    </span>
-                </td>
-            </tr>
+            <?php foreach ($transactions_data as $order): ?>
+                <tr>
+                    <td><?= $order['order_code'] ?></td>
+                    <td><?= $order['fullname'] ?></td>
+                    <td><?= $order['ticket_type'] ?></td>
+                    <td>Rp
+                        <?= number_format(
+                            $order['ticket_price'],
+                            0,
+                            ',',
+                            '.'
+                        ); ?></td>
+                    <td><?= $order['quantity'] ?></td>
+                    <td><?= $order['total_price'] ?></td>
+                    <td>
+                        <?php if ($order['payment_status'] == 'paid'): ?>
+                            <span class="badge bg-success">
+                                Paid
+                            </span>
+                        <?php elseif ($order['payment_status'] == 'pending'): ?>
+                            <span class="badge bg-warning">
+                                Pending
+                            </span>
+                        <?php else: ?>
+                            <span class="badge bg-secondary"><?= ucfirst($order['payment_status']) ?></span>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
 
         </tbody>
 

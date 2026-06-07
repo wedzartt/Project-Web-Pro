@@ -2,6 +2,8 @@
 
 <?= $this->section('content') ?>
 
+
+
 <div class="row g-4">
 
     <div class="col-md-3">
@@ -10,31 +12,31 @@
 
             <h6>Total Ticket Sold</h6>
 
-            <h2>2.450</h2>
+            <h2><?= $paid_order ?></h2>
 
         </div>
 
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-4">
 
         <div class="card-stat orange">
 
             <h6>Total Revenue</h6>
 
-            <h2>Rp 245JT</h2>
+            <h2>Rp <?= number_format($total_revenue, 0, ',', '.') ?></h2>
 
         </div>
 
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-2">
 
         <div class="card-stat green">
 
             <h6>Total User</h6>
 
-            <h2>1.245</h2>
+            <h2><?= $total_order ?></h2>
 
         </div>
 
@@ -44,9 +46,9 @@
 
         <div class="card-stat purple">
 
-            <h6>Transactions</h6>
+            <h6>Transactions Pending</h6>
 
-            <h2>845</h2>
+            <h2><?= $pending_order ?></h2>
 
         </div>
 
@@ -65,37 +67,39 @@
         <thead>
 
             <tr>
-                <th>Invoice</th>
-                <th>User</th>
-                <th>Ticket</th>
-                <th>Status</th>
+                <th>Order Code</th>
+                <th>Full Name</th>
+                <th>Ticket Type</th>
+                <th>Payment Method</th>
+                <th>Payment Status</th>
             </tr>
 
         </thead>
 
         <tbody>
 
-            <tr>
-                <td>#INV001</td>
-                <td>Ariq</td>
-                <td>Day 1 Pass</td>
-                <td>
-                    <span class="badge bg-success">
-                        Paid
-                    </span>
-                </td>
-            </tr>
+            <?php foreach ($recent_transactions as $order): ?>
+                <tr>
+                    <td><?= $order['order_code'] ?></td>
+                    <td><?= $order['fullname'] ?></td>
+                    <td><?= $order['ticket_type'] ?></td>
+                    <td><?= $order['payment_method'] ?></td>
+                    <td>
+                        <?php if ($order['payment_status'] == 'paid'): ?>
+                            <span class="badge bg-success">
+                                Paid
+                            </span>
+                        <?php elseif ($order['payment_status'] == 'pending'): ?>
+                            <span class="badge bg-warning">
+                                Pending
+                            </span>
+                        <?php else: ?>
+                            <span class="badge bg-secondary"><?= ucfirst($order['payment_status']) ?></span>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
 
-            <tr>
-                <td>#INV002</td>
-                <td>Rizky</td>
-                <td>Regular Pass</td>
-                <td>
-                    <span class="badge bg-warning">
-                        Pending
-                    </span>
-                </td>
-            </tr>
 
         </tbody>
 

@@ -10,24 +10,22 @@
 
     <div class="container hero-content">
 
-        <div class="hero-badge">
-            GENERASI MELODY FESTIVAL MUSIK 2026
-        </div>
+        <!-- <div class="hero-badge">
+            GENERASI MELODI FESTIVAL MUSIK 2026
+        </div> -->
 
         <h1 class="hero-title">
             GENERASI
-            <span>MELODY</span>
+            <span>MELODI</span>
         </h1>
 
         <p class="hero-description">
-            Festival musik penuh warna,
-            pantai, senja, dan lineup terbaik
-            tahun ini.
+            Setiap generasi memiliki cerita, dan setiap cerita memiliki melodinya sendiri.
         </p>
 
-         <div class="hero-buttons">
+        <div class="hero-buttons">
 
-            <a href="#ticket" class="btn-ticket">
+            <a href="<?= base_url('/ticket'); ?>" class="btn-ticket">
                 BUY TICKET
             </a>
 
@@ -41,7 +39,7 @@
 
         <div class="cloud cloud-1"></div>
         <div class="cloud cloud-2"></div>
-        <div class="sun"></div>
+        <!-- <div class="sun"></div> -->
 
     </div>
 
@@ -49,38 +47,47 @@
 
 
 <!-- Running Text -->
-<section class="running-text">
+<section class="running-text1">
 
     <div class="marquee">
 
         <div class="marquee-content">
 
             <span>Genarasi Melodi</span>
-            <span>•</span>
 
             <span>Music Festival</span>
-            <span>•</span>
-
-            <span>Live Music</span>
-            <span>•</span>
 
             <span>Genarasi Melodi</span>
-            <span>•</span>
 
             <span>Music Festival</span>
-            <span>•</span>
-
-            <span>Live Music</span>
-            <span>•</span>
 
             <span>Genarasi Melodi</span>
-            <span>•</span>
 
             <span>Music Festival</span>
-            <span>•</span>
 
-            <span>Live Music</span>
-            <span>•</span>
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
 
         </div>
 
@@ -99,19 +106,16 @@ ABOUT SECION FESTIVAL 1 (BODY 1)
         <div class="festival-box">
 
             <h2 class="festival-title">
-                GENERASI MELODY
+                GENERASI MELODI
             </h2>
 
             <p class="festival-text">
 
-                Generasi Melody merupakan festival musik
-                multi-genre yang menghadirkan nuansa
-                nostalgia, pop culture, dan semangat
-                generasi baru dalam satu panggung.
-
-                Nikmati pengalaman festival penuh warna
-                bersama musisi favorit Indonesia dan suasana meriah
-                sepanjang hari.
+                Generasi Melodi adalah festival musik yang mempertemukan berbagai cerita, suara, dan generasi dalam satu panggung.
+                <!-- <br> -->
+                Dari lirik yang menemani perjalanan hidup hingga lagu yang menjadi kenangan, Generasi Melodi hadir untuk merayakan musik Indonesia bersama.
+                <!-- <br> -->
+                Satu Generasi, Banyak Melodi.
 
             </p>
 
@@ -121,21 +125,72 @@ ABOUT SECION FESTIVAL 1 (BODY 1)
 
 </section>
 
-<!-- /* =========================
+<!-- =========================
     ABOUT SECION FESTIVAL 1 (BODY 1)
-========================= */ -->
+========================= -->
+
+
+<!-- Running Text -->
+<section class="running-text2">
+
+    <div class="marquee">
+
+        <div class="marquee-content">
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+            <span>Genarasi Melodi</span>
+
+            <span>Music Festival</span>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <!-- /* =========================
     SHAPE DRIVER
 ========================= */ -->
-
+<!-- 
 <div class="wave-divider">
     <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
         <path
             d="M0,64L80,58.7C160,53,320,43,480,53.3C640,64,800,96,960,101.3C1120,107,1280,85,1360,74.7L1440,64L1440,160L1360,160C1280,160,1120,160,960,160C800,160,640,160,480,160C320,160,160,160,80,160L0,160Z">
         </path>
     </svg>
-</div>
+</div> -->
 
 <!-- /* =========================
     SHAPE DRIVER
@@ -150,7 +205,7 @@ ABOUT SECION FESTIVAL 1 (BODY 1)
     <div class="container">
 
         <h2 class="section-heading">
-            LINEUP ARTIST
+            LINE UP
         </h2>
 
         <div class="artist-wrapper">

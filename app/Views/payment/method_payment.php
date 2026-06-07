@@ -23,7 +23,6 @@
                 type="radio"
                 name="payment_method"
                 value="BCA">
-            >
             <span>
                 BCA Virtual Account
             </span>

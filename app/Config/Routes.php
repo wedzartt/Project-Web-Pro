@@ -38,7 +38,19 @@ $routes->post('/payment', 'Checkout::process');
 
 $routes->post('/payment/succes', 'Checkout::succes');
 
-$routes->group('admin', function ($routes) {
+
+// LOGIN ADMIN
+
+$routes->get('/admin/login', 'Admin\Auth::index');
+$routes->post('/admin/login', 'Admin\Auth::login');
+$routes->get('/admin/logout', 'Admin\Auth::logout');
+
+$routes->group('admin', 
+    [
+        'filter' => 'adminAuth'
+    ],
+
+    function ($routes) {
 
     // a nya harus kecil meyesuaikan nama folder
     $routes->get('dashboard', 'Admin\Dashboard::index');
