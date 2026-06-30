@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Success</title>
 
+    <!-- Google fonts -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="<?= base_url('assets/css/succes_page.css') ?>">
 </head>
 <body>
@@ -21,7 +32,7 @@
         <h1>Payment Successful</h1>
 
         <p class="subtitle">
-            Thank you for purchasing Generasi Melodi Festival tickets.
+            Thank you for purchasing Generasi Melodi tickets.
         </p>
 
         <div class="divider"></div>

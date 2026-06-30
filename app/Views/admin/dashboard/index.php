@@ -2,17 +2,15 @@
 
 <?= $this->section('content') ?>
 
-
-
 <div class="row g-4">
 
     <div class="col-md-3">
 
-        <div class="card-stat">
+        <div class="card-stat yellow">
 
             <h6>Total Ticket Sold</h6>
 
-            <h2><?= $paid_order ?></h2>
+            <h2><?= $total_order ?></h2>
 
         </div>
 

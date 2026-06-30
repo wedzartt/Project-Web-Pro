@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 
 
-<!-- HERO SECTION -->
+<!-- AWAL HERO SECTION -->
 <section class="hero-festival" id="home">
 
     <div class="hero-overlay"></div>
@@ -36,17 +36,18 @@
         </div>
 
         <!-- Floating Decorations -->
-
         <div class="cloud cloud-1"></div>
         <div class="cloud cloud-2"></div>
         <!-- <div class="sun"></div> -->
+        <!-- Floating Decorations -->
 
     </div>
 
 </section>
+<!-- AWAL HERO SECTION -->
 
 
-<!-- Running Text -->
+<!-- RUNNING TEXT -->
 <section class="running-text1">
 
     <div class="marquee">
@@ -94,11 +95,9 @@
     </div>
 
 </section>
+<!-- RUNNING TEXT -->
 
-<!-- /* =========================
-ABOUT SECION FESTIVAL 1 (BODY 1)
-========================= */ -->
-
+<!-- AWAL HOME PAGE SECION BODY 1 -->
 <section class="about-festival" id="about">
 
     <div class="container">
@@ -124,13 +123,9 @@ ABOUT SECION FESTIVAL 1 (BODY 1)
     </div>
 
 </section>
+<!-- AKHIR HOME PAGE SECION BODY 1 -->
 
-<!-- =========================
-    ABOUT SECION FESTIVAL 1 (BODY 1)
-========================= -->
-
-
-<!-- Running Text -->
+<!-- RUNNING TEXT -->
 <section class="running-text2">
 
     <div class="marquee">
@@ -178,28 +173,19 @@ ABOUT SECION FESTIVAL 1 (BODY 1)
     </div>
 
 </section>
+<!-- RUNNING TEXT -->
 
-
-<!-- /* =========================
-    SHAPE DRIVER
-========================= */ -->
-<!-- 
-<div class="wave-divider">
+<!-- AWAL GRADASI -->
+<!-- <div class="wave-divider">
     <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
         <path
             d="M0,64L80,58.7C160,53,320,43,480,53.3C640,64,800,96,960,101.3C1120,107,1280,85,1360,74.7L1440,64L1440,160L1360,160C1280,160,1120,160,960,160C800,160,640,160,480,160C320,160,160,160,80,160L0,160Z">
         </path>
     </svg>
-</div> -->
+</div>  -->
+<!-- AKHIR GRADASI -->
 
-<!-- /* =========================
-    SHAPE DRIVER
-========================= */
-
-/* =========================
-    LINEUP ARTIST (BODY 2)
-========================= */ -->
-
+<!-- AWAL HOME PAGE SECION BODY 2 -->
 <section class="lineup-section" id="lineup">
 
     <div class="container">
@@ -262,14 +248,23 @@ ABOUT SECION FESTIVAL 1 (BODY 1)
                 Fourtwnty
             </div>
 
+            <div class="artist-card">
+                The Changcuters
+            </div>
+
+            <div class="artist-card">
+                The Jansen
+            </div>
+
+            <div class="artist-card">
+                The 1975
+            </div>
+
         </div>
 
     </div>
 
 </section>
-
-<!-- /* =========================
-LINEUP SELESAI (BODY 2)
-========================= */ -->
+<!-- AWAL HOME PAGE SECION BODY 2 -->
 
 <?= $this->endSection(); ?>

@@ -2,7 +2,65 @@
 
 <?= $this->section('content') ?>
 
-<div class="table-wrapper">
+    <h4 class="mb-4" style="color: black;">
+
+        Payment Method 
+
+    </h4>
+
+<div class="row g-4">
+
+    <div class="col-md-3">
+
+        <div class="card-stat yellow">
+
+            <h6>BCA</h6>
+
+            <h2><?= $BCA ?></h2>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card-stat orange">
+
+            <h6>DANA</h6>
+
+            <h2><?= $DANA ?></h2>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card-stat green">
+
+            <h6>GOPAY</h6>
+
+            <h2><?= $GOPAY ?></h2>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card-stat purple">
+
+            <h6>QRIS</h6>
+
+            <h2><?= $QRIS ?></h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="table-wrapper mt-4">
 
     <h4 class="mb-4">
 

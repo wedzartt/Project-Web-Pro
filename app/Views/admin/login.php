@@ -43,12 +43,12 @@
                 </h1>
 
                 <p>
-                    Festival Musik & Kreativitas
+                    Setiap generasi memiliki cerita, dan setiap cerita memiliki melodinya sendiri.
                 </p>
 
             </div>
 
-            <?php if(session()->getFlashdata('error')) : ?>
+            <?php if (session()->getFlashdata('error')) : ?>
 
                 <div class="alert-error">
 
@@ -102,4 +102,5 @@
     </div>
 
 </body>
+
 </html>

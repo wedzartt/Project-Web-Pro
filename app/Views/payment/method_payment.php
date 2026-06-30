@@ -15,8 +15,6 @@
             name="order_id"
             value="<?= $order_id; ?>">
 
-      
-
         <label class="method-item">
 
             <input

@@ -13,11 +13,6 @@ class Dashboard extends BaseController
 
         $orderModel = new OrderModel();
 
-        // $recentTransactions = $orderModel
-        //     ->where('payment_status', 'paid')
-        //     ->orderBy('created_at', 'DESC')
-        //     ->findAll(5);
-
         $recentTransactions = $orderModel
         ->orderBy('created_at', 'DESC')
         ->findAll(5);

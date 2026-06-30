@@ -61,3 +61,14 @@
 
     text-decoration:none;
 }
+
+.nav-link{
+    color:#0f8f9d;
+    font-weight:600;
+    transition:.3s;
+}
+
+.active-link{
+    color:#ff6b1a !important;
+    /* border-bottom:3px solid #ff6b1a;  */
+}

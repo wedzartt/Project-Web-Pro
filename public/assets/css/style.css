@@ -51,9 +51,7 @@ body::before{
    GLOBAL
 ========================= */
 
-/* =========================
-   ABOUT SECION FESTIVAL 1 (BODY 1)
-========================= */
+/* AWAL HOME PAGE SECION BODY 1 */
 
 .about-festival{
 
@@ -132,16 +130,10 @@ body::before{
     font-weight:500;
 }
 
-/* =========================
-   ABOUT SECION FESTIVAL 1 (BODY 1) 
-========================= */
+/* AKHIR HOME PAGE SECION BODY 1 */
 
-
-/* =========================
-   SHAPE DRIVER 
-========================= */
-
-.wave-divider{
+/* AWAL GRADASI */
+/* .wave-divider{
 
     line-height:0;
 
@@ -160,15 +152,10 @@ body::before{
 .wave-divider path{
 
     fill:#9FD0FF;
-}
+} */
+/* AKHIR GRADASI */
 
-/* =========================
-   SHAPE DRIVER 
-========================= */
-
-/* =========================
-   LINEUP ARTIST (BODY 2)
-========================= */
+/* LINEUP ARTIST (BODY 2) */
 
 .lineup-section{
 
@@ -276,7 +263,6 @@ body::before{
         rotate(-2deg)
         translateY(-6px);
 }
+/* LINEUP ARTIST (BODY 2) */
 
-/* =========================
-   LINEUP SELESAI (BODY 2)
-========================= */
+

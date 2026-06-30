@@ -44,16 +44,10 @@ class Checkout extends BaseController
 
             'quantity' => $quantity,
 
-            'total_price' => $total,
-
-            // 'payment_method' => 'BCA'
-
+            'total_price' => $total
         ]);
 
         $orderId = $orderModel->getInsertID();
-
-        // return redirect()->to('/payment/succes/' . $orderId);
-        
 
         $data = [
 
@@ -81,8 +75,6 @@ class Checkout extends BaseController
 
         ];
 
-        // return redirect()->to('/payment/succes/' . $order);
-
         // dd($data);   
 
         return view('payment/index', $data);
@@ -100,18 +92,8 @@ class Checkout extends BaseController
         ]);
     }
 
-    // public function paymentProcess($id)
-    // {
-
-    //     dd(
-    //         $this->request
-    //             ->getPost('payment_method')
-    //     );
-    // }
-
     public function succes()
     {
-
         // dd(
         //     $this->request
         //         ->getPost('payment_method')

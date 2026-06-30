@@ -1,4 +1,5 @@
-<div class="sidebar">
+<!-- biar side bar nya fix -->
+<div class="sidebar custom-sidebar">
 
     <div class="logo">
         <a class="nav-link active-link"
